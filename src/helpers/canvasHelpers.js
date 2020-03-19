@@ -1,6 +1,6 @@
 import { matrixToText } from "./matrixHelpers";
 
-export const drawLine = (canvas, x0, x1, y0, y1, fillSymbol = 1) => {
+export const drawLine = (canvas, x0, x1, y0, y1, fillSymbol) => {
   let xCoordinateStart = parseInt(x0, 10);
   let xCoordinateEnd = parseInt(x1, 10);
   let yCoordinateStart = parseInt(y0, 10);
@@ -14,7 +14,7 @@ export const drawLine = (canvas, x0, x1, y0, y1, fillSymbol = 1) => {
   return canvas;
 };
 
-export const drawRectangle = (canvas, x0, x1, y0, y1, fillSymbol = 1) => {
+export const drawRectangle = (canvas, x0, x1, y0, y1, fillSymbol) => {
   let xCoordinateStart = parseInt(x0, 10);
   let xCoordinateEnd = parseInt(x1, 10);
   let yCoordinateStart = parseInt(y0, 10);
@@ -32,7 +32,7 @@ export const drawRectangle = (canvas, x0, x1, y0, y1, fillSymbol = 1) => {
   return canvas;
 };
 
-export const drawFill = (canvas, x0, y0, fillSymbol = 1, oldSymbol, wallSymbol) => {
+export const drawFill = (canvas, x0, y0, fillSymbol, oldSymbol, wallSymbol) => {
   let xCoordinate = parseInt(x0, 10);
   let yCoordinate = parseInt(y0, 10);
   let rowLength = canvas.length;
