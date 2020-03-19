@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <CanvasDrow/> component should match the snapshot 1`] = `
+<div
+  className="input-block"
+>
+  <input
+    accept=".txt"
+    onChange={[Function]}
+    type="file"
+  />
+</div>
+`;

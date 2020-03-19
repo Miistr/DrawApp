@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <App/> component should match the snapshot 1`] = `
+<div
+  className="app-container"
+>
+  <div
+    className="input-block"
+  >
+    <input
+      accept=".txt"
+      onChange={[Function]}
+      type="file"
+    />
+  </div>
+</div>
+`;
