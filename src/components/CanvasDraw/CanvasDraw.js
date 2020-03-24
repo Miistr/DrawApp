@@ -33,8 +33,15 @@ const CanvasDraw = () => {
     let canvasHistory = [];
     let canvas;
     const instructionLines = rawInstructions.split("\n");
+
+    if (rawInstructions[0] !== CANVAS_COMMANDS.canvas) {
+      alert("Please start painting from create canvas `C`");
+      return;
+    }
+
     instructionLines.forEach(instruction => {
       const [command, ...args] = instruction.split(" ");
+
       switch (command) {
         case CANVAS_COMMANDS.canvas:
           const [columns, rows] = args;
@@ -67,7 +74,6 @@ const CanvasDraw = () => {
         default:
           break;
       }
-      console.log(cloneMatrixArray(canvas));
       canvasHistory.push(cloneMatrixArray(canvas));
     });
 
